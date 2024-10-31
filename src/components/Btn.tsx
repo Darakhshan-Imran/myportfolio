@@ -14,8 +14,8 @@ const Buttona = () => {
 
     <div>
       <button onClick={handleNavigation}
-        className="w-[20rem] h-[2rem] items-center bg-fuchsia-400 rounded-full mx-4 mt-5
-        text-sm font-medium text-wrap transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+        className="space-y-2 py-2 w-full text-center h-auto items-center bg-fuchsia-400 rounded-full mx-4 mt-5
+        text-base sm:text-lg font-medium text-wrap transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
         Hire Me
       </button>
     </div>
@@ -23,5 +23,4 @@ const Buttona = () => {
 }
 
 export default Buttona
-
 

@@ -10,7 +10,7 @@ import { FaInstagram } from "react-icons/fa6";
 export default function Home() {
   return (
     
-    <section className="bg-gradient-to-r from-[#11091c] to-[#270927] min-h-screen w-full flex flex-col items-center p-4">
+    <section className="bg-gradient-to-r from-[#11091c] to-[#270927] min-h-screen w-screen bg-cover overflow-x-hidden flex flex-col items-center mx-0 px-0 sm:px-6 md:px-8">
   
     <Header />
   

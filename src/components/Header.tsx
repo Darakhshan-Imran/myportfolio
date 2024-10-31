@@ -30,6 +30,7 @@ const Header = () => {
       </div>
 
       {/* Navigation - visible on medium and larger screens */}
+      <div>
       <nav className='hidden md:block'>
         <ul className=" flex flex-row gap-8 px-5 text-base lg:text-lg">
           {navItems.map((item, index) => (
@@ -44,15 +45,15 @@ const Header = () => {
          
           <Button/>
         </ul>
-
+ 
       </nav>
 
   <Sheet>
-  <SheetTrigger className='md:hidden text-fuchsia-400 px-7'>
+  <SheetTrigger className='md:hidden text-fuchsia-400 px-7 text-lg'>
     <Menu/>
   </SheetTrigger>
-  <SheetContent className=' bg-[#482f69] text-slate-50 font-medium text-lg flex flex-col items-center p-4'>
-  <ul>
+  <SheetContent className=' bg-[#482f69] text-slate-50 font-medium text-base sm:text-lg flex flex-col items-center px-4 w-full h-full overflow-y-auto'>
+  <ul className='space-y-4 py-6 w-full text-center'>
           {navItems.map((item, index) => (
             <li key={index}>
               <Link href={item.link} className="hover:text-fuchsia-300">
@@ -65,7 +66,8 @@ const Header = () => {
  </ul>
    
   </SheetContent>
-  </Sheet>
+  </Sheet> 
+  </div>
 
   </div> 
   </div> 
@@ -75,4 +77,3 @@ const Header = () => {
 
 export default Header
 
-// max-w-full sm:w-[100%] md:max-w-[80%] lg:max-w-[75%] xl:max-w-[1242px]

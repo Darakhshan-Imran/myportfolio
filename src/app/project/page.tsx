@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Projects = () => {
   return (
-    <section className="bg-gradient-to-r from-[#11091c] to-[#320d32] min-h-screen max-w-screen flex flex-col items-center p-4">
+    <section className="bg-gradient-to-r from-[#11091c] to-[#320d32] min-h-screen w-screen overflow-x-hidden flex flex-col items-center mx-0 px-0 sm:px-6 md:px-8">
 
     <Header/>
 
