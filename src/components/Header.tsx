@@ -18,7 +18,8 @@ const Header = () => {
 
 <header>
   <div className="flex justify-center items-center">
-    <div className=" max-w-screen-2xl h-[5rem] bg-blend-hue rounded-full flex gap-4 justify-between items-center mt-8 shadow-fuchsia-400 shadow-lg text-white"> 
+    <div className="w-full max-w-screen-2xl h-[5rem] bg-blend-hue rounded-full flex gap-4 justify-between items-center mt-8
+     shadow-fuchsia-400 shadow-lg text-white px-4"> 
       
       {/* Title */}
       <div className="flex-shrink-0 flex items-center">
@@ -26,11 +27,11 @@ const Header = () => {
         width={500}
         height={500}
        className='w-[6rem] rounded-full shadow-fuchsia-400 shadow-lg' />
-        <h1 className="font-semibold font-montserrat px-4 text-lg sm:text-xl md:text-3xl mx-4">Darakhshan Imran</h1> 
+        <h1 className="font-semibold font-montserrat px-4 sm:px-6 md:px-8 text-lg sm:text-xl md:text-3xl mx-4">Darakhshan Imran</h1> 
       </div>
 
       {/* Navigation - visible on medium and larger screens */}
-      <div>
+      <div className='flex w-full overflow-x-hidden'>
       <nav className='hidden md:block'>
         <ul className=" flex flex-row gap-8 px-5 text-base lg:text-lg">
           {navItems.map((item, index) => (
@@ -49,10 +50,10 @@ const Header = () => {
       </nav>
 
   <Sheet>
-  <SheetTrigger className='md:hidden text-fuchsia-400 px-7 text-lg'>
+  <SheetTrigger className='md:hidden text-fuchsia-400 px-0 text-lg '>
     <Menu/>
   </SheetTrigger>
-  <SheetContent className=' bg-[#482f69] text-slate-50 font-medium text-base sm:text-lg flex flex-col items-center px-4 w-full h-full overflow-y-auto'>
+  <SheetContent className=' bg-[#482f69] text-slate-50 font-medium text-base sm:text-lg flex flex-col items-center px-4 h-full w-full overflow-y-auto'>
   <ul className='space-y-4 py-6 w-full text-center'>
           {navItems.map((item, index) => (
             <li key={index}>
@@ -76,4 +77,3 @@ const Header = () => {
 }
 
 export default Header
-

@@ -20,7 +20,7 @@ const Skills = () => {
     width={800}
     height={700}
     
-    className='mt-[5rem]'/>
+    className='mt-[5rem] flex flex-shrink-0'/>
       
   </div>
   </section>

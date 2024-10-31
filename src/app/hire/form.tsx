@@ -47,7 +47,7 @@ export default function ContactForm() {
 
   return (
     <Form {...form}>
-  <div className="flex justify-center items-center mt-20 w-full max-w-lg h-auto min-h-[30rem] sm:w-[30rem] sm:h-[30rem] rounded-xl bg-transparent shadow-lg shadow-fuchsia-300">
+  <div className="flex justify-center items-center mt-20 w-full max-w-lg h-auto min-h-[30rem] sm:w-[30rem] sm:h-[30rem] rounded-xl bg-transparent shadow-xl shadow-fuchsia-300">
     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
       <FormField
         control={form.control}
@@ -113,5 +113,3 @@ export default function ContactForm() {
   );
 }
 
-// h-[30rem]
-// flex justify-center items-center mt-[5rem] w-[30rem] h-[30rem] rounded-xl bg-transparent shadow-lg shadow-fuchsia-300
